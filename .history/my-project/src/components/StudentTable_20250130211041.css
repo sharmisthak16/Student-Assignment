@@ -1,0 +1,94 @@
+/* Container for the student table */
+.student-table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add student button */
+.add-student-btn {
+  padding: 12px 25px; /* Increased padding for larger button */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.add-student-btn:hover {
+  background-color: #45a049;
+}
+
+/* Student table */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Increased margin to separate from button */
+}
+
+/* Table headers and cells */
+.student-table th,
+.student-table td {
+  padding: 16px; /* Increased padding for larger cells */
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.student-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action icons (e.g., edit/delete) */
+.action-icon {
+  margin: 0 12px; /* Increased margin for action icons */
+  cursor: pointer;
+  color: #007bff;
+}
+
+.action-icon:hover {
+  color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .student-table th,
+  .student-table td {
+    padding: 12px; /* Larger padding for smaller screens */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .action-icon {
+    margin: 0 8px; /* Adjust margin for action icons */
+  }
+
+  .student-table-container {
+    padding: 15px; /* Increased padding on small screens */
+  }
+}
+
+/* Additional responsiveness for very small screens */
+@media (max-width: 480px) {
+  .student-table th,
+  .student-table td {
+    padding: 10px; /* Increased padding */
+    font-size: 0.9rem; /* Font size adjustment for small screens */
+  }
+
+  .add-student-btn {
+    font-size: 1rem; /* Font size adjustment */
+    padding: 10px 20px; /* Increased button padding */
+  }
+}

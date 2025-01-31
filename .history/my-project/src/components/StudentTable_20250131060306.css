@@ -1,0 +1,117 @@
+
+.student-table-container {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%; 
+  max-width: 1400px; 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-student-btn {
+  text-decoration: none;
+  padding: 15px 30px; 
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 25px; 
+  font-size: 1.2rem;
+}
+
+.add-student-btn:hover {
+  background-color: #45a049;
+}
+
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+
+.student-table th,
+.student-table td {
+  padding: 18px; 
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.student-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.action-icon {
+  margin: 0 15px; 
+  cursor: pointer;
+  color: #007bff;
+}
+
+.action-icon:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+  .student-table-container {
+    width: 90%; 
+    max-width: 1200px;
+    padding: 20px;
+  }
+
+  .student-table th,
+  .student-table td {
+    padding: 14px; /* Adjust padding */
+    font-size: 1.1rem; /* Slightly smaller font for medium screens */
+  }
+
+  .action-icon {
+    margin: 0 10px; /* Adjust margin for action icons */
+  }
+
+  .add-student-btn {
+    padding: 14px 28px; /* Adjust padding for the button */
+    font-size: 1.1rem; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .student-table th,
+  .student-table td {
+    padding: 12px; /* Adjust padding for small screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .action-icon {
+    margin: 0 8px; /* Adjust margin for action icons */
+  }
+
+  .student-table-container {
+    padding: 15px; /* Adjust padding for small screens */
+  }
+}
+
+/* Additional responsiveness for very small screens */
+@media (max-width: 480px) {
+  .student-table th,
+  .student-table td {
+    padding: 10px; /* Adjust padding */
+    font-size: 0.9rem; /* Font size adjustment for small screens */
+  }
+
+  .add-student-btn {
+    font-size: 1rem; /* Font size adjustment */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+}

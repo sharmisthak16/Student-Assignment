@@ -1,0 +1,15 @@
+import React from 'react'
+import HomeButtons from '../components/HomeButtons'
+import LoginForm from '../components/LoginForm'
+
+
+function Home() {
+  return (
+    <div>
+      <HomeButtons/>
+      
+    </div>
+  )
+}
+
+export default Home
