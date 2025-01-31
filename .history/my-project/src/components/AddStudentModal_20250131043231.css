@@ -1,0 +1,86 @@
+/* General form styling */
+form.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+/* Label and input field styling */
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input, select, textarea {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Focus effect */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #5c6bc0;  /* Subtle blue for focus */
+  box-shadow: 0 0 0 2px rgba(92, 107, 192, 0.2);  /* Light blue glow on focus */
+}
+
+/* Button styling */
+.submit-button {
+  background-color: #00796b; /* Teal background */
+  color: white;              /* White text */
+  padding: 12px 20px;        /* Padding */
+  border: none;              /* Remove border */
+  border-radius: 6px;        /* Rounded corners */
+  cursor: pointer;          /* Pointer cursor on hover */
+  font-size: 16px;           /* Font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submit-button:disabled {
+  background-color: #b2dfdb;  /* Light teal when disabled */
+  cursor: not-allowed;        /* Disable cursor */
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #004d40; /* Darker teal on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Textarea specific styling */
+textarea {
+  resize: vertical;  /* Allow resizing only vertically */
+  height: 120px;
+}
+
+/* Spacing for input elements */
+input, select, textarea {
+  margin-bottom: 15px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  form.student-form {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .submit-button {
+    padding: 14px;
+  }
+}

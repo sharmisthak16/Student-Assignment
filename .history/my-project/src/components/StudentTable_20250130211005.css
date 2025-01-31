@@ -1,0 +1,94 @@
+/* Container for the student table */
+.student-table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add student button */
+.add-student-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.add-student-btn:hover {
+  background-color: #45a049;
+}
+
+/* Student table */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Table headers and cells */
+.student-table th,
+.student-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.student-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action icons (e.g., edit/delete) */
+.action-icon {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.action-icon:hover {
+  color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .student-table th,
+  .student-table td {
+    padding: 8px; /* Smaller padding for smaller screens */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+
+  .action-icon {
+    margin: 0 5px; /* Smaller margin for action icons */
+  }
+
+  .student-table-container {
+    padding: 10px; /* Reduced padding on small screens */
+  }
+}
+
+/* Additional responsiveness for very small screens */
+@media (max-width: 480px) {
+  .student-table th,
+  .student-table td {
+    padding: 6px; /* Even smaller padding */
+    font-size: 0.8rem; /* Even smaller font size */
+  }
+
+  .add-student-btn {
+    font-size: 0.9rem; /* Slightly smaller button text */
+    padding: 8px 15px; /* Smaller padding for the button */
+  }
+}

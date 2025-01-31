@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align form at the top */
+  height: 100vh;
+  margin: 0;
+  padding: 10px; /* Small padding to prevent cutting off content */
+}
+
+/* AddStudentModal.css */
+
+/* General form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label and input field styling */
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Focus effect */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Button styling */
+.submit-button {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 10px 20px;        /* Padding */
+  border: none;              /* Remove border */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;          /* Pointer cursor on hover */
+  font-size: 16px;           /* Font size */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submit-button:disabled {
+  background-color: #0f35dc;    /* Light gray background when disabled */
+  cursor: not-allowed;       /* Disable cursor */
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Textarea specific styling */
+textarea {
+  resize: vertical;  /* Allow resizing only vertically */
+  height: 100px;
+}
+
+/* Spacing for input elements */
+input, select, textarea {
+  margin-bottom: 10px;
+}
+
+/* Responsiveness for mobile view */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .submit-button {
+    padding: 12px;
+  }
+}
